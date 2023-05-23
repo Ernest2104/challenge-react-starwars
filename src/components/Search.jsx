@@ -1,11 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Input } from '@mui/material';
 
-const Search = () => {
+const Search = ({ cardLocation, search }) => {
+
+  const [input, setInput] = useState('')
+
+  const handleChange = (e) => {
+    setInput(e.target.value);
+  }
+
   return (
     <div>
-      <Input />
-      <Button variant='contained' color='success'>Search</Button>
+      <Input 
+        type='text'
+        name='username'
+        value={input.username}
+        onChange={(e) => handleChange(e)}
+      />
+      <Button variant='contained' color='success' onClick={() => search(input, cardLocation)}>Search</Button>
     </div>
   )
 }

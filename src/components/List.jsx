@@ -1,8 +1,12 @@
 import React from 'react'
 
-const List = () => {
+const List = ({lista}) => {
   return (
-    <div>List</div>
+    <div>
+      { lista.length > 0 && lista.map(ch => (
+        <h3 key={ch.id}>{ch.name}</h3>
+      ))}
+    </div>
   )
 }
 
