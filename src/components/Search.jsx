@@ -1,8 +1,12 @@
-import React from 'react'
+import React from 'react';
+import { Button, Input } from '@mui/material';
 
 const Search = () => {
   return (
-    <div>Search</div>
+    <div>
+      <Input />
+      <Button variant='contained' color='success'>Search</Button>
+    </div>
   )
 }
 

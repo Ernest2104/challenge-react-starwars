@@ -1,13 +1,20 @@
-import React from 'react';
-import Search from './Search';
+import React from "react";
+import "./NavBar.css";
+import Search from "./Search";
+import Random from "./Random";
 
 const NavBar = () => {
   return (
-    <>
-      <h1>NavBar</h1>
+    <div className="navBar">
       <Search />
-    </>
-  )
-}
+      <Random />
 
-export default NavBar
+      <button>All Characters</button>
+
+      <Search />
+      <Random />
+    </div>
+  );
+};
+
+export default NavBar;

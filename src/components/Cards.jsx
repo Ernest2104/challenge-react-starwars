@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import Cardi from './Cardi';
+import './Cards.css';
+import { Card } from '@mui/material';
 
 const Cards = () => {
   return (
-    <h1>Cards</h1>
+    <div className='cards'>
+      <Cardi />
+      <Cardi />
+    </div>
   )
 }
 
